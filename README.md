@@ -10,7 +10,7 @@ Installation
   * Get [soundcloud-ruby](https://github.com/soundcloudlabs/soundcloud-ruby) and its dependencies. 
     I advice you to clone the repository to get the last version of the sources -- `git clone git://github.com/soundcloudlabs/soundcloud-ruby.git`.
     Then install the dependencies -- `gem install httmultiparty hashie`.
-  * clone this repository -- `git clone git://github.com/quentin/soundcloudrss-ruby.git`
+  * clone this repository -- `git clone git://github.com/quentin/soundcloud-rss-ruby.git`
 
 Configuration
 -------------
