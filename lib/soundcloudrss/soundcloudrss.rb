@@ -90,6 +90,24 @@ class SoundcloudRSS
 
     # load options using default and argument options
     @options = DEFAULTS.merge(load_options(DEFAULTS.merge(options))).merge(options)
+
+    # try to load the ruby soundcloud api
+    begin
+      require 'soundcloud'
+    rescue LoadError
+      # look for vendors/soundcloud-ruby/lib
+      begin
+        vendors = File.join(File.dirname(__FILE__),"..","..","vendors","soundcloud-ruby","lib")
+        if File.directory?(vendors)
+          $:.unshift(vendors)
+          require 'soundcloud'
+        end
+      rescue LoadError
+        STDERR.puts "soundcloud-rss-ruby: could not load 'soundcloud'"
+        raise $!
+      end
+    end
+
     @client = Soundcloud.new(@options)
   end
 

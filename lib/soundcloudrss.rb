@@ -1,5 +1,4 @@
 require 'net/http'
 require 'uri'
-require 'soundcloud'
 require 'rss/maker'
 require 'soundcloudrss/soundcloudrss'
