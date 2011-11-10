@@ -13,7 +13,7 @@ Installation
   
   2. `optional but recommanded` Create a `vendors` directory.
         
-        mv soundcloud-rss-ruby
+        cd soundcloud-rss-ruby
         mkdir vendors
   
   3. Get [soundcloud-ruby](https://github.com/soundcloudlabs/soundcloud-ruby) and its dependencies.  
