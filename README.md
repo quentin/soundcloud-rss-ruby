@@ -20,7 +20,7 @@ Installation
      `recommanded` clone the git-hub repository to get the last version of the sources,
      in the `vendors` directory you just created at step 2. 
         
-        git clone git://github.com/soundcloudlabs/soundcloud-ruby.git vendors/
+        git clone git://github.com/soundcloudlabs/soundcloud-ruby.git vendors/soundcloud-ruby
 
   2. Install the soundcloud-ruby dependencies. 
   
