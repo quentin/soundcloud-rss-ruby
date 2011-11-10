@@ -4,6 +4,17 @@ SoundcloudRSS-ruby
 A ruby library to generate RSS feed for your
 [SoundCloud](http://www.soundcloud.com/) account.
 
+Features
+--------
+
+  * Generate an RSS feed featuring the "incoming tracks" of your account dashboard 
+    (see the [/me/activities](http://developers.soundcloud.com/docs/api/me-activities) API documentation).
+    - Permanent link to the track on SoundCloud.
+    - Track's title and creator's name.
+    - Track's artwork.
+    - Track's description.
+    - Embedded MP3 streaming URL when available.
+
 Installation
 ------------
 
@@ -51,4 +62,7 @@ Run on your linuxbox
   1. run `ruby -rubygems examples/servlet/servlet.rb` (add `-Ipath/to/soundcloud-ruby/lib` if your soundcloud-ruby copy is not in the `vendors` directory)
   2. enjoy [http://localhost:8080/soundrss]
 
+Add to Netvibes
+---------------
 
+Simply add the public URL of your linuxbox feed and be ready to wait at least one hour between each update.
